@@ -1,15 +1,12 @@
 //import logo from './logo.svg';
 import './App.css';
 import Nav from './components/Nav';
-import About from './components/About'
+import About from './components/About/About'
 import { useState } from 'react';
 import ContactForm from './components/Contact/Contact';
 
 function App(){
   const [categories] = useState([
-    {name: 'Raymond Flaherty',
-  description: 'Photos of Raymond with family and at work.'
-},
 {name:'photos of family', description:'The most important people in my life!'},
   ]);
 

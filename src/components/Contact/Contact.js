@@ -33,6 +33,11 @@ function ContactForm() {
             setFormState({...formState, [e.target.name]: e.target.value});
         }
     };
+    const [state,setState]=useState(true);
+    let LIurl="www.linkedin.com/in/raymond-flaherty-07b2011bb";
+    let linkedInElement= <p>No handle exists for this user!</p>;
+    if(state) linkedInElement=<a href={LIurl}>LinkedIn</a>
+  
     
     return(
         <section>
@@ -57,6 +62,17 @@ function ContactForm() {
                 )}
                 <button data-testid="button" type="submit">Submit</button>
             </form>
+            <div>
+                <h2>FIND ME!</h2>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        {linkedInElement}
+                    </li>
+                </ul>
+            
+            </div>
         </section>
     )
 }
