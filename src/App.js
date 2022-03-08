@@ -1,25 +1,30 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
+import Nav from './components/Nav';
+import About from './components/About'
+import { useState } from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+function App(){
+  const [categories] = useState([
+    {name: 'Raymond Flaherty',
+  description: 'Photos of Raymond with family and at work.'
+},
+{name:'photos of family', description:'The most important people in my life!'},
+  ]);
 
-export default App;
+  const [currentCategory, setCurrentCategory]= useState (categories[0]);
+    return (
+      <div>
+        <Nav
+          categories={categories}
+          setCurrentCategory={setCurrentCategory}
+          currentCategory={currentCategory}
+        ></Nav>
+        <main>
+          <About></About>
+        </main>
+      </div>
+    );
+  }
+  
+  export default App;

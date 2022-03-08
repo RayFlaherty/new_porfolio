@@ -11,3 +11,140 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+body{
+  background-color: black;
+}
+
+/*header box- title color and style*/
+.header{
+  width:auto;
+  margin: 1%;
+  height:200px;
+  border-radius:4px;
+  border:2px solid black;
+  position:relative;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+}
+/*header nav - position and style*/
+.header nav{
+  width: auto;
+ height: 50px;
+ position: relative;
+ top: 50px;
+ background-color: black;
+}
+/*nav bar styling*/
+
+.nav li{
+  display: inline;
+  float: inline-start;
+  padding: 20px;
+  margin: 50px;
+}
+  
+
+/*main image size and location*/
+.hero img{
+  margin: 1%;
+  display: block;
+  height: 500px;
+  width: 48%;
+  float: right;
+}
+/* Who I am sexion location and styling*/
+.Who-I-Am {
+  margin: 1%;
+  width: 48%;
+  height: 500px;
+  border-radius: 4px;
+  border-color: black solid 2px;
+  background-color: gold;
+  position: relative;
+  float: left;
+  color: white;
+}
+
+/* Who I DO sexion location and styling*/
+.What-I-Do{
+  margin: 1%;
+  width: 58%;
+  height: 500px;
+  border-radius: 4px;
+  border-color: black solid 2px;
+  background-color: gold;
+  position: relative;
+  float: right;
+  color: white;
+
+}
+/* Looking for an appropriate image of family, or possibly an image of you working with a group*/
+.family img {
+  margin: 1%;
+  display: block;
+  height: 500px;
+  width: 38%;
+  float: left;
+  position: relative;
+}
+
+/* History of Work Section and overall styling*/
+.history {
+  margin: 1%;
+  width: 100%;
+  height: 50px;
+  border-radius: 4px;
+  border-color: black solid 2px;
+  background-color: gold;
+  position: relative;
+  float: left;
+  color: white;
+
+}
+/* a buffer zone between history of work header block and future links*/
+.history work {
+  margin: 1%;
+  width: 100%;
+  height: 200px;
+  border-radius: 4px;
+  border-color: black solid 2px;
+  background-color: white;
+  position: relative;
+  
+}
+/* styling placeholders for future links*/
+.work ul li {
+  display: inline;
+  float: inline-start;
+  padding: 20px;
+  margin: 50px;
+}
+
+/* Some noteable work history with the PD*/
+/* not sure if relivant to current pursuits, decide later if you want to replace with hobbies instead*/
+.noteables {
+  margin: 1%;
+  width: 48%;
+  height: 250px;
+  border-radius: 4px;
+  border-color: black solid 2px;
+  background-color: gold;
+  position: relative;
+  float: left;
+  color: white;
+}
+
+/* contact information area styling, location */
+.contacts {
+  margin: 1%;
+  width: 48%;
+  height: 250px;
+  border-radius: 4px;
+  border-color: black solid 2px;
+  background-color: gold;
+  position: relative;
+  float: right;
+  color: white;   
+}
