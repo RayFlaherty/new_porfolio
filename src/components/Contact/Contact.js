@@ -34,10 +34,17 @@ function ContactForm() {
         }
     };
     const [state,setState]=useState(true);
-    let LIurl="www.linkedin.com/in/raymond-flaherty-07b2011bb";
+    let LIurl="https://linkedin.com/in/raymond-flaherty-07b2011bb";
     let linkedInElement= <p>No handle exists for this user!</p>;
     if(state) linkedInElement=<a href={LIurl}>LinkedIn</a>
-  
+
+    let GitHubLink= "https://github.com/RayFlaherty";
+    let GitHubEl= <p>Link</p>;
+    if(state) GitHubEl=<a href={GitHubLink}>Git Hub</a>
+
+    let FaceBookLink = "https://www.facebook.com/raymond.flahertyiv";
+    let FacebookEl = <p>Link</p>;
+    if(state) FacebookEl= <a href={FaceBookLink}>Facebook</a>
     
     return(
         <section>
@@ -66,9 +73,15 @@ function ContactForm() {
                 <h2>FIND ME!</h2>
             </div>
             <div>
-                <ul>
-                    <li>
+                <ul className="flex-row px-1">
+                    <li className="mx-2"> 
                         {linkedInElement}
+                    </li>
+                    <li className="mx-2">
+                        {GitHubEl}
+                    </li>
+                    <li className="mx-2">
+                        {FacebookEl}
                     </li>
                 </ul>
             
